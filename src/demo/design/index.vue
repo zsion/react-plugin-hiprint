@@ -75,6 +75,9 @@
         <a-button type="primary" @click="ippRequestPrint">
           ipp请求 打印测试
         </a-button>
+        <a-button type="primary" @click="setFieldId">
+          设置字段名
+        </a-button>
       </a-space>
       <a-space style="margin-bottom: 10px">
         <a-textarea style="width:30vw" v-model:value="jsonIn" @pressEnter="updateJson" placeholder="复制json模板到此后 点击右侧更新"
@@ -777,6 +780,9 @@ export default {
         console.log(res)
       })
     },
+    setFieldId(){
+      $('#fieldId').val("哈哈哈");
+    }, 
     updateJson() {
       if (hiprintTemplate) {
         try {

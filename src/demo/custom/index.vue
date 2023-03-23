@@ -75,6 +75,12 @@
               </a-button>
             </a-popconfirm>
           </a-button-group>
+          <a-button type="primary" @click="setFieldId">
+            设置字段名
+          </a-button>
+          <a-button type="primary" @click="setColumnFieldId">
+            设置列字段名
+          </a-button>
         </a-space>
       </a-col>
     </a-row>
@@ -305,7 +311,15 @@ export default {
       } catch (error) {
         this.$message.error(`操作失败: ${error}`);
       }
-    }
+    },
+    setFieldId(){
+      $('#fieldId').val("table");
+    }, 
+    setColumnFieldId(){  
+      let oldValue = $('#columnFieldId').val();
+      $('#columnFieldId').val(`${oldValue}#NAME`);
+      $("#columnFieldId").trigger("click");
+    }, 
   }
 }
 </script>

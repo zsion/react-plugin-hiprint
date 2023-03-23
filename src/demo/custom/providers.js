@@ -136,17 +136,17 @@ export const aProvider = function (ops) {
             tid: 'aProviderModule.table', title: '订单数据',
             type: 'table',
             options: {
-              field: 'table',
+              // field: 'table',
               tableHeaderRepeat: 'first',
               tableFooterRepeat: 'last',
-              fields: [
-                {text: '名称', field: 'NAME'},
-                {text: '数量', field: 'SL'},
-                {text: '规格', field: 'GG'},
-                {text: '条码', field: 'TM'},
-                {text: '单价', field: 'DJ'},
-                {text: '金额', field: 'JE'},
-              ],
+              // fields: [
+              //   {text: '名称', field: 'NAME'},
+              //   {text: '数量', field: 'SL'},
+              //   {text: '规格', field: 'GG'},
+              //   {text: '条码', field: 'TM'},
+              //   {text: '单价', field: 'DJ'},
+              //   {text: '金额', field: 'JE'},
+              // ],
             },
             editable: true,
             columnDisplayEditable: true,//列显示是否能编辑
