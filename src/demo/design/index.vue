@@ -76,7 +76,7 @@
           ipp请求 打印测试
         </a-button>
         <a-button type="primary" @click="setFieldId">
-          设置字段名
+          基础/字段名
         </a-button>
       </a-space>
       <a-space style="margin-bottom: 10px">

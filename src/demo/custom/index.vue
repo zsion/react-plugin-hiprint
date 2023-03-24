@@ -76,10 +76,10 @@
             </a-popconfirm>
           </a-button-group>
           <a-button type="primary" @click="setFieldId">
-            设置字段名
+            基础/字段名
           </a-button>
           <a-button type="primary" @click="setColumnFieldId">
-            设置列字段名
+            列/标题
           </a-button>
         </a-space>
       </a-col>
