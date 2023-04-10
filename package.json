@@ -1,7 +1,7 @@
 {
   "name": "react-plugin-hiprint",
-  "description": "修改.rect-printElement-types .hiprint-printElement-type > li > ul > li > a 去掉样式中的 /* height: 92px; */",
-  "version": "0.0.3",
+  "description": "完成sow文档中-新增字体最小的样式—最小是5号（目前是6号）-需求，并升级组件",
+  "version": "0.0.4",
   "author": "CcSimple",
   "license": "MIT",
   "main": "dist/vue-plugin-hiprint.js",
