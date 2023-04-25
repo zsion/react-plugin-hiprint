@@ -1,7 +1,7 @@
 {
   "name": "react-plugin-hiprint",
-  "description": "升级默认显示 （共 1 页 第 1 页） 需求",
-  "version": "0.0.5",
+  "description": "升级网格线（辅助线）功能",
+  "version": "0.0.6",
   "author": "CcSimple",
   "license": "MIT",
   "main": "dist/vue-plugin-hiprint.js",

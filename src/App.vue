@@ -38,7 +38,7 @@ export default {
   components: {printDesign, printCustom, printTasks},
   data() {
     return {
-      curDemo: 'printCustom',
+      curDemo: 'printDesign',
       keepInclude: 'printDesign,printCustom,printTasks',
       demoList: [
         {name: 'printDesign', title: '默认拖拽设计'},

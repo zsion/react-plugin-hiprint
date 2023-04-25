@@ -636,7 +636,9 @@ export default {
       if (window.hiwebSocket.opened) {
         const printerList = hiprintTemplate.getPrinterList();
         console.log(printerList)
-        hiprintTemplate.print2(printData, {printer: '', title: 'hiprint测试打印'});
+        console.log('hiprintTemplate---',hiprintTemplate)
+        //printer：名字是哪个就是选择哪个打印机打印，代码中选择的是：导出为WPS PDF
+        hiprintTemplate.print2(printData, {printer: '导出为WPS PDF', title: 'hiprint测试打印'});
         return
       }
       this.$message.error('客户端未连接,无法直接打印')
@@ -656,7 +658,7 @@ export default {
       let p = printerList[0];
       console.log(p)
       // 系统不同， 参数可能不同
-      let url = p.options['printer-uri-supported'];
+      let url = p.options['printer-location'];//原来是：printer-uri-supported
       // 测试 获取 ipp打印 支持参数
       hiprint.ippPrint({
         url: url,
@@ -681,7 +683,7 @@ export default {
       let p = printerList[0];
       console.log(p)
       // 系统不同， 参数可能不同
-      let url = p.options['printer-uri-supported'];
+      let url = p.options['printer-location'];//原来是：printer-uri-supported
       // 测试 打印文本
       hiprint.ippPrint({
         url: url,
@@ -721,7 +723,7 @@ export default {
       let p = printerList[0];
       console.log(p)
       // 系统不同， 参数可能不同
-      let url = p.options['printer-uri-supported'];
+      let url = p.options['printer-location'];//原来是：printer-uri-supported
       // 详见： https://www.npmjs.com/package/ipp
       hiprint.ippRequest({
         url: url,
@@ -749,7 +751,7 @@ export default {
       let p = printerList[0];
       console.log(p)
       // 系统不同， 参数可能不同
-      let url = p.options['printer-uri-supported'];
+      let url = p.options['printer-location'];//原来是：printer-uri-supported
       let str = "ippRequestPrint ippRequestPrint ippRequestPrint";
       let array = new Uint8Array(str.length);
       for (var i = 0; i < str.length; i++) {
