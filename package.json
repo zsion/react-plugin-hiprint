@@ -1,7 +1,7 @@
 {
   "name": "react-plugin-hiprint",
-  "description": "升级网格线（辅助线）功能",
-  "version": "0.0.6",
+  "description": "精简design页面拖拽表格",
+  "version": "0.0.7",
   "author": "CcSimple",
   "license": "MIT",
   "main": "dist/vue-plugin-hiprint.js",
