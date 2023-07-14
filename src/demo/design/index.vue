@@ -167,7 +167,7 @@
                 </a-col>
                 <a-col :span="12" class="drag_item_box" tid="defaultModule.text">
                   <div>
-                    <a class="ep-draggable-item" tid="defaultModule.table" style>
+                    <a class="ep-draggable-item" tid="defaultModule.tabledefault" style>
                       <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                       <p class="glyphicon-class">表格</p>
                     </a>
